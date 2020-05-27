@@ -1,6 +1,6 @@
 # Blogdown Jump-to-Main Button
 
-For inclusive and accessible Internet.
+For more inclusive and accessible Internet.
 
 ## Usage
 
