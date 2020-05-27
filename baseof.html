@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+<section class="a11y-links">
+<button class="a11y-links__link" tabindex="0" onclick="jumpAfterTOC()">Skip to main content</button>
+</section>
+<header class="header">
+{{ partial "header.html" . }}
+</header>
+{{ block "main" . }}
+<!-- The part of the page that begins to differ between templates -->
+{{ end }}
+<footer class="footer">
+{{ partial "footer" . }}
+</footer>
+{{ range .Site.Params.customJS }}
+<script async src="{{ . | relURL }}"></script>
+{{ end }}
+{{ partial "footer_highlightjs" . }}
+{{ partial "footer_mathjax" . }}
+{{ partial "google_analytics" . }}
+</body>
+</html>

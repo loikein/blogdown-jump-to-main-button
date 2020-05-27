@@ -1,0 +1,8 @@
+params:
+  customCSS: [ "/css/jump-after-toc.css"]
+  customJS: ["js/jump-after-toc.js"]
+
+  favicon: favicon.ico
+  logo:
+    url: logo.png
+    alt: Home
